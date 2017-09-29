@@ -1,0 +1,72 @@
+
+
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/meh"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:weightSum="5">-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/meh2"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="4"-->
+    <!--/>-->
+    <!--<Button-->
+    <!--android:id="@+id/meh3"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="Go!"/>-->
+    <!--</LinearLayout>-->
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_height="56dp"
+        android:layout_width="match_parent"
+        android:background="#FFFA00"/>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.android.test7.MapsActivity"
+        tools:layout="@layout/activity_maps" />
+
+    <Button
+        android:id="@+id/meh4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nearest Crosswalk"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:fontFamily="Calibri"
+        android:padding="18dp"
+        android:onClick="nearestCrossWalk"
+        android:background="#FFFF00"/>
+
+    <!--<Button-->
+    <!--android:id="@+id/meh5"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Meh2"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_toRightOf="@id/meh4"/>-->
+    <!--<Button-->
+    <!--android:id="@+id/meh6"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Mark"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_toRightOf="@id/meh4"/>-->
+
+</RelativeLayout>
